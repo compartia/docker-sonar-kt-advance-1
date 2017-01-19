@@ -7,6 +7,6 @@ RUN apk --no-cache add --repository http://dl-cdn.alpinelinux.org/alpine/edge/co
 ENV PLUGINS_DIR /opt/sonarqube/extensions/plugins
 
 WORKDIR $PLUGINS_DIR
-RUN wget https://github.com/kestreltechnology/sonar-kt-advance/releases/download/5.5.7/sonar-kt-advance-plugin-5.5.7.jar
+RUN wget https://github.com/kestreltechnology/sonar-kt-advance/releases/download/5.6.0/sonar-kt-advance-plugin-5.6.0.jar
 
 WORKDIR $SONARQUBE_HOME
