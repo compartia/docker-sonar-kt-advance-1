@@ -4,6 +4,16 @@
 ### [SQ-KT](SQ-KT)
 Bare SonarQube on H2 DB with KT-Advance plugin pre-installed
 
+### [SQ-KT-PG](SQ-KT-PG)
+SonarQube configured to run with Postgres database;  KT-Advance plugin pre-installed.
+(Supposed to run as a part of composite together with [PG](PG) or [PG-dnsmasq](PG-dnsmasq) )
+
+### [PG](PG)
+A Posgress database with empty SQ tables. Bears only pre-created user accounts and default setting for things like Quality Profiles etc... To be used in composition with [SQ-KT-PG](SQ-KT-PG)
+
+### [PG-dnsmasq](PG-dnsmasq)
+Same like PG, but also contains ‘dnspasq’ sample analysis results. To be used in composition with [SQ-KT-PG](SQ-KT-PG)
+
 
 
 ## SonarQube with H2 database
