@@ -12,7 +12,8 @@ SonarQube configured to run with Postgres database;  KT-Advance plugin pre-insta
 A Posgress database with empty SQ tables. Bears only pre-created user accounts and default setting for things like Quality Profiles etc... To be used in composition with [SQ-KT-PG](SQ-KT-PG)
 
 ### [/PG-dnsmasq](PG-dnsmasq)
-Same like PG, but also contains ‘dnspasq’ sample analysis results. To be used in composition with [SQ-KT-PG](SQ-KT-PG)
+Same like PG, but also contains ‘dnsmasq’ sample analysis results. To be used in composition with [SQ-KT-PG](SQ-KT-PG)
+
 
 ### Docker Images dependency diagram
 ![Docker Images dependency diagram](https://github.com/compartia/docker-sonar-kt-advance/blob/master/docs/deps.png?raw=true)
@@ -21,26 +22,26 @@ Same like PG, but also contains ‘dnspasq’ sample analysis results. To be use
 ## SonarQube with H2 database
 To run bare SonarQube with only KT-Advance plugin pre-installed, you need either to build the Docker image
 ```
-$ docker build -t compartia/kt-sonarqube:5.5.6 .
+$ docker build -t kestreltechnology/sq-kt:5.6.0 .
 ```
 OR
 to pull the image from Docker Hub
 
 ```
-$ docker pull compartia/kt-sonarqube:5.5.6
+$ docker pull kestreltechnology/sq-kt:5.6.0
 ```
 Then run it with this command:
 ```
-$ docker run -d --name kt-sonarqube -p 9000:9000 -p 9092:9092 compartia/kt-sonarqube:5.5.6
+$ docker run -d --name my-sq-kt -p 9000:9000 -p 9092:9092 kestreltechnology/sq-kt:5.6.0
 ```
 #### Docker image
-https://hub.docker.com/r/compartia/kt-sonarqube/
+https://hub.docker.com/r/kestreltechnology/sq-kt/
 #### KT-Advance plugin for SonarQube
-https://github.com/kestreltechnology/sonar-kt-advance/releases/download/5.5.6-b/sonar-kt-advance-plugin-5.5.6.jar
+https://github.com/kestreltechnology/sonar-kt-advance/releases/download/5.6.0-b/sonar-kt-advance-plugin-5.6.0.jar
 
 ## SonarQube with Postgres database
-To run SonarQube with Postgres pre-filled with Redis project analysis,
-just run docker composite:
+To run SonarQube with Postgres pre-filled with Dnsmasq project analysis,
+just run docker composite from the subdir [SQ-KT-PG-dnsmasq](SQ-KT-PG-dnsmasq):
 ```
 $ docker-compose up
 ```
@@ -54,8 +55,8 @@ you may navigate to [http://localhost:9000](http://localhost:9000)
 
 #### Docker images
 the Docker composite is built of 2 containers. One for SonarQube, other for Posgres DB. The corresponding images are:
-- https://hub.docker.com/r/compartia/kt-sonarqube-pg/
-- https://hub.docker.com/r/compartia/kt-sonarqube-postgres-redis/
+- https://hub.docker.com/r/kestreltechnology/pg-dnsmasq/
+- https://hub.docker.com/r/kestreltechnology/sq-kt-pg/
 
 ## Known issues
 - there's a small chance that Posgres DB is not yet started at the moment when SonarQube needs it. In this case just re-start the composite. *Most likely it is fixed, unable to reproduce after employing docker/wait-for-it.sh script*
