@@ -2,7 +2,7 @@ FROM kestreltechnology/sq-kt:5.6.0
 MAINTAINER Artem Zaborskiy “artem@toptal.com"
 
 #install PG command line tools
-RUN apk --update add postgresql-client -V 9.4.9-r0
+RUN apk --update add postgresql-client
 
 COPY wait-for-it.sh $SONARQUBE_HOME/bin
 RUN chmod +x $SONARQUBE_HOME/bin/wait-for-it.sh
