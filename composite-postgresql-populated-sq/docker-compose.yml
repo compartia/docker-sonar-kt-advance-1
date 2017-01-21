@@ -3,7 +3,7 @@ version: "2"
 services:
 
   sonarqube:
-    image: kestreltechnology/sq-kt-pg:5.6.0
+    image: kestreltechnology/demo-sonarqube-postgresql-ktadvance
     ports:
       - "9000:9000"
     networks:
@@ -19,7 +19,7 @@ services:
 
 
   db:
-    image: kestreltechnology/pg-dnsmasq:5.6.0
+    image: kestreltechnology/postgresql-populated-sq
     networks:
       - sonarnet
     ports:
