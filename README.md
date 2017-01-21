@@ -12,7 +12,7 @@ SonarQube configured to run with Postgres database;  KT-Advance plugin pre-insta
 A Posgress database with empty SQ tables. Bears only pre-created user accounts and default setting for things like Quality Profiles etc... To be used in composition with [/demo-sonarqube-postgresql-ktadvance](demo-sonarqube-postgresql-ktadvance)
 
 ### [/postgresql-populated-sq](postgresql-populated-sq)
-Same like PG, but also contains ‘dnsmasq’ sample analysis results. To be used in composition with [/demo-sonarqube-postgresql-ktadvance](demo-sonarqube-postgresql-ktadvance)
+Same like [/postgresql-empty-sq](postgresql-empty-sq), but also contains ‘dnsmasq’ sample analysis results. To be used in composition with [/demo-sonarqube-postgresql-ktadvance](demo-sonarqube-postgresql-ktadvance)
 
 
 ### Docker Images dependency diagram
@@ -59,8 +59,6 @@ the Docker composite is built of 2 containers. One for SonarQube, other for Posg
 - https://hub.docker.com/r/kestreltechnology/demo-sonarqube-postgresql-ktadvance/
 - https://hub.docker.com/r/kestreltechnology/postgresql-populated-sq/
 
-## Known issues
-- there's a small chance that Posgres DB is not yet started at the moment when SonarQube needs it. In this case just re-start the composite. *Most likely it is fixed, unable to reproduce after employing docker/wait-for-it.sh script*
 
 ## Running the SonarQube scanner
 To run the scanner on your KT-analyzed C project run `sonar-scanner` in the project dir. (In case you don’t have `sonar-scanner CLI`, please get it from (http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner) ).
