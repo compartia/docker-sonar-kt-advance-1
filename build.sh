@@ -1,10 +1,10 @@
 VER=5.6.0
 NS=kestreltechnology
 
-docker build -t $NS/pg:$VER ./PG
+docker build -t $NS/postgresql-empty-sq:$VER ./postgresql-empty-sq
 
-docker build -t $NS/sq-kt:$VER ./SQ-KT
+docker build -t $NS/ktadvance-h2-empty-sq:$VER ./ktadvance-h2-empty-sq
 
-docker build -t $NS/sq-kt-pg:$VER ./SQ-KT-PG
+docker build -t $NS/demo-sonarqube-postgresql-ktadvance:$VER ./demo-sonarqube-postgresql-ktadvance
 
-docker build -t $NS/pg-dnsmasq:$VER ./PG-dnsmasq
+docker build -t $NS/postgresql-populated-sq:$VER ./postgresql-populated-sq

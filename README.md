@@ -1,18 +1,18 @@
 # KT Advance SonarQube Plugin Docker
 
 ## Contents
-### [/SQ-KT](SQ-KT)
-Bare SonarQube on H2 DB with KT-Advance plugin pre-installed
+### [/ktadvance-h2-empty-sq](ktadvance-h2-empty-sq)
+KT Advance plugin installed in SonarQube using H2 database
 
-### [/SQ-KT-PG](SQ-KT-PG)
+### [/demo-sonarqube-postgresql-ktadvance](demo-sonarqube-postgresql-ktadvance)
 SonarQube configured to run with Postgres database;  KT-Advance plugin pre-installed.
-(Supposed to run as a part of composite together with [PG](PG) or [PG-dnsmasq](PG-dnsmasq) )
+(Supposed to run as a part of composite ([this](composite-postgresql-empty-sq) or  [this](composite-postgresql-populated-sq)) together with [postgresql-empty-sq](postgresql-empty-sq) or [postgresql-populated-sq](postgresql-populated-sq) )
 
-### [/PG](PG)
-A Posgress database with empty SQ tables. Bears only pre-created user accounts and default setting for things like Quality Profiles etc... To be used in composition with [SQ-KT-PG](SQ-KT-PG)
+### [/postgresql-empty-sq](postgresql-empty-sq)
+A Posgress database with empty SQ tables. Bears only pre-created user accounts and default setting for things like Quality Profiles etc... To be used in composition with [/demo-sonarqube-postgresql-ktadvance](demo-sonarqube-postgresql-ktadvance)
 
-### [/PG-dnsmasq](PG-dnsmasq)
-Same like PG, but also contains ‘dnsmasq’ sample analysis results. To be used in composition with [SQ-KT-PG](SQ-KT-PG)
+### [/postgresql-populated-sq](postgresql-populated-sq)
+Same like PG, but also contains ‘dnsmasq’ sample analysis results. To be used in composition with [/demo-sonarqube-postgresql-ktadvance](demo-sonarqube-postgresql-ktadvance)
 
 
 ### Docker Images dependency diagram
@@ -22,27 +22,28 @@ Same like PG, but also contains ‘dnsmasq’ sample analysis results. To be use
 ## SonarQube with H2 database
 To run bare SonarQube with only KT-Advance plugin pre-installed, you need either to build the Docker image
 ```
-$ docker build -t kestreltechnology/sq-kt:5.6.0 .
+$ docker build -t kestreltechnology/ktadvance-h2-empty-sq .
 ```
 OR
 to pull the image from Docker Hub
 
 ```
-$ docker pull kestreltechnology/sq-kt:5.6.0
+$ docker pull kestreltechnology/ktadvance-h2-empty-sq
 ```
 Then run it with this command:
 ```
-$ docker run -d --name my-sq-kt -p 9000:9000 -p 9092:9092 kestreltechnology/sq-kt:5.6.0
+$ docker run -d --name my-sq-kt -p 9000:9000 -p 9092:9092 kestreltechnology/ktadvance-h2-empty-sq
 ```
 #### Docker image
-https://hub.docker.com/r/kestreltechnology/sq-kt/
+https://hub.docker.com/r/kestreltechnology/ktadvance-h2-empty-sq/
 #### KT-Advance plugin for SonarQube
 https://github.com/kestreltechnology/sonar-kt-advance/releases/download/5.6.0-b/sonar-kt-advance-plugin-5.6.0.jar
 
 ## SonarQube with Postgres database
 To run SonarQube with Postgres pre-filled with Dnsmasq project analysis,
-just run docker composite from the subdir [SQ-KT-PG-dnsmasq](SQ-KT-PG-dnsmasq):
+just run docker composite from the subdir [./composite-postgresql-populated-sq](composite-postgresql-populated-sq):
 ```
+$ cd composite-postgresql-populated-sq
 $ docker-compose up
 ```
 
@@ -55,8 +56,8 @@ you may navigate to [http://localhost:9000](http://localhost:9000)
 
 #### Docker images
 the Docker composite is built of 2 containers. One for SonarQube, other for Posgres DB. The corresponding images are:
-- https://hub.docker.com/r/kestreltechnology/pg-dnsmasq/
-- https://hub.docker.com/r/kestreltechnology/sq-kt-pg/
+- https://hub.docker.com/r/kestreltechnology/demo-sonarqube-postgresql-ktadvance/
+- https://hub.docker.com/r/kestreltechnology/postgresql-populated-sq/
 
 ## Known issues
 - there's a small chance that Posgres DB is not yet started at the moment when SonarQube needs it. In this case just re-start the composite. *Most likely it is fixed, unable to reproduce after employing docker/wait-for-it.sh script*

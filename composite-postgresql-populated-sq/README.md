@@ -4,6 +4,7 @@ To run SonarQube with Postgres pre-filled with 'dnsmasq' project analysis,
 just run docker composite:
 
 ```
+$ cd composite-postgresql-populated-sq
 $ docker-compose up
 ```
 

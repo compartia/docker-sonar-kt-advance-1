@@ -14,7 +14,7 @@
 	<key>BackgroundGraphic</key>
 	<dict>
 		<key>Bounds</key>
-		<string>{{0, 0}, {559, 783}}</string>
+		<string>{{0, 0}, {806, 536}}</string>
 		<key>Class</key>
 		<string>SolidGraphic</string>
 		<key>ID</key>
@@ -63,9 +63,8 @@
 			<integer>106</integer>
 			<key>Points</key>
 			<array>
-				<string>{252.74129648691857, 450.50050859749621}</string>
-				<string>{258, 334}</string>
-				<string>{370.52724367293678, 239.32190532346007}</string>
+				<string>{394.00000548663138, 341.38851057309796}</string>
+				<string>{394.00000548663138, 239.49999999470342}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -75,8 +74,6 @@
 					<string>StickArrow</string>
 					<key>Legacy</key>
 					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
 					<key>Pattern</key>
 					<integer>1</integer>
 					<key>TailArrow</key>
@@ -95,14 +92,14 @@
 			<key>Head</key>
 			<dict>
 				<key>ID</key>
-				<integer>103</integer>
+				<integer>81</integer>
 			</dict>
 			<key>ID</key>
 			<integer>105</integer>
 			<key>Points</key>
 			<array>
-				<string>{403.00000991363441, 317.5}</string>
-				<string>{403.00000991363441, 239.5}</string>
+				<string>{614.59954841637489, 184.66569401988841}</string>
+				<string>{556.39805669974453, 132.33432062877006}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -112,8 +109,6 @@
 					<string>UMLInheritance</string>
 					<key>Legacy</key>
 					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
 					<key>TailArrow</key>
 					<string>0</string>
 				</dict>
@@ -131,7 +126,7 @@
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{301, 185}, {203.99999999999994, 54}}</string>
+					<string>{{301, 185}, {186, 54}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -145,20 +140,17 @@
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
 \cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red128\green27\blue51;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
 
-\f0\b\fs24 \cf0 PG\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
-
-\b0 \cf2 kestreltechnology/pg:5.6.0}</string>
+\f0\b\fs24 \cf0 postgresql-empty-sq}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{301.00000000000023, 176}, {59.999903030303017, 9}}</string>
+					<string>{{301.00000000000023, 176}, {54.705793939393921, 9}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -182,8 +174,8 @@
 			<integer>101</integer>
 			<key>Points</key>
 			<array>
-				<string>{229.36238709027376, 450.61113937680381}</string>
-				<string>{166.13761290972619, 372.38886062319614}</string>
+				<string>{300.50335585572708, 363.05686072316252}</string>
+				<string>{235.4967477796956, 355.48704260127465}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -212,7 +204,7 @@
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{184, 451}, {135, 54}}</string>
+					<string>{{301.00000000000006, 341.8885105678014}, {185.99999999999989, 64.111489432198653}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -246,14 +238,14 @@
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
 
-\b \cf0 SQ-KT-PG}</string>
+\b \cf0 composite-postgresql-empty-sq}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{184.00000000000006, 442}, {39.705818181818159, 9}}</string>
+					<string>{{301.00000000000006, 331.20326232910162}, {54.705793939393892, 10.685248238699776}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -292,9 +284,8 @@
 			<integer>97</integer>
 			<key>Points</key>
 			<array>
-				<string>{184.53982838845485, 317.72086314047897}</string>
-				<string>{251, 273}</string>
-				<string>{335.25728398584926, 239.18622155831048}</string>
+				<string>{195.73189844424112, 317.76708930997694}</string>
+				<string>{344.89782182016904, 239.24257365413061}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -313,8 +304,6 @@
 					<string>StickArrow</string>
 					<key>Legacy</key>
 					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
 					<key>Pattern</key>
 					<integer>1</integer>
 					<key>TailArrow</key>
@@ -383,13 +372,10 @@
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
 \cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red128\green27\blue51;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
 
-\f0\b\fs24 \cf0 SQ-KT-PG\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
-
-\b0 \cf2 kestreltechnology/sq-kt-pg:5.6.0}</string>
+\f0\b\fs24 \cf0 demo-sonarqube-postgresql-ktadvance}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -420,9 +406,9 @@
 			<integer>92</integer>
 			<key>Points</key>
 			<array>
-				<string>{284.36089623613037, 621.68035293309947}</string>
-				<string>{379, 543}</string>
-				<string>{399.66710704338448, 372.4963668920783}</string>
+				<string>{487.48881349773984, 459.62596251375948}</string>
+				<string>{588, 438}</string>
+				<string>{638.06798842896319, 239.48481780797076}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -432,8 +418,6 @@
 					<string>StickArrow</string>
 					<key>Legacy</key>
 					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
 					<key>Pattern</key>
 					<integer>1</integer>
 					<key>TailArrow</key>
@@ -458,9 +442,9 @@
 			<integer>90</integer>
 			<key>Points</key>
 			<array>
-				<string>{228.38950874364014, 621.61790135502383}</string>
-				<string>{146, 524}</string>
-				<string>{144.30726222102419, 372.49996878166377}</string>
+				<string>{300.50018050093058, 477.22811678773411}</string>
+				<string>{164.95934595000497, 473.58535753288334}</string>
+				<string>{148.48142403407385, 372.49348729928795}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -470,8 +454,6 @@
 					<string>StickArrow</string>
 					<key>Legacy</key>
 					<true/>
-					<key>LineType</key>
-					<integer>1</integer>
 					<key>Pattern</key>
 					<integer>1</integer>
 					<key>TailArrow</key>
@@ -491,7 +473,7 @@
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{184, 622}, {135, 54}}</string>
+					<string>{{301, 447.68524823869973}, {186.00000000000006, 64.111489432198653}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -518,21 +500,21 @@
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
 \cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red128\green27\blue51;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
 
 \f0\fs24 \cf0 &lt;composite&gt;\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
 
-\b \cf0 SQ-KT-PG-\cf2 dnsmasq}</string>
+\b \cf0 composite-postgresql-populated-sq}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{184.00000000000006, 613}, {39.705818181818159, 9}}</string>
+					<string>{{301.00000000000023, 437.00000000000006}, {54.705793939393907, 10.685248238699778}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -571,8 +553,8 @@
 			<integer>86</integer>
 			<key>Points</key>
 			<array>
-				<string>{403.00001423853644, 184.5}</string>
-				<string>{403.00001423853644, 142.5}</string>
+				<string>{427.69446195456089, 184.68513357950135}</string>
+				<string>{492.29626963832715, 132.31481379862817}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -601,7 +583,7 @@
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{301, 318}, {203.99999999999994, 54}}</string>
+					<string>{{536, 185}, {218.00000000000006, 54}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -615,20 +597,17 @@
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
 \cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red128\green27\blue51;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
 
-\f0\b\fs24 \cf0 PG-\cf2 dnsmasq\cf0 \
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
-
-\b0 \cf2 kestreltechnology/pg-dnsmasq:5.6.0}</string>
+\f0\b\fs24 \cf0 postgresql-populated-sq}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{301.00000000000023, 309}, {59.999903030303017, 9}}</string>
+					<string>{{535.99999999999966, 176}, {64.117543434343446, 9}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -647,7 +626,7 @@
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{301, 88}, {204, 54}}</string>
+					<string>{{424, 78}, {204, 54}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -701,7 +680,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{301, 79}, {59.999903030302995, 9}}</string>
+					<string>{{424, 69}, {59.999903030302995, 9}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -746,7 +725,7 @@
 			<key>Points</key>
 			<array>
 				<string>{144.00001063168472, 184.5}</string>
-				<string>{144.00001063168472, 142.5}</string>
+				<string>{144.00001063168472, 132.5}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -789,13 +768,10 @@
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
 \cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red128\green27\blue51;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
 
-\f0\b\fs24 \cf0 SQ-KT\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
-
-\b0 \cf2 kestreltechnology/sq-kt:5.6.0}</string>
+\f0\b\fs24 \cf0 ktadvance-h2-empty-sq}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -821,7 +797,7 @@
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{53, 88}, {182, 54}}</string>
+					<string>{{53, 78}, {182, 54}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -875,7 +851,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{53.000000000000057, 79}, {53.529325252525261, 9}}</string>
+					<string>{{53.000000000000057, 69}, {53.529325252525261, 9}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -955,7 +931,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2017-01-19 05:14:55 +0000</string>
+	<string>2017-01-21 09:09:08 +0000</string>
 	<key>Modifier</key>
 	<string>artem</string>
 	<key>NotesVisible</key>
@@ -983,10 +959,15 @@
 			<string>float</string>
 			<string>18</string>
 		</array>
+		<key>NSOrientation</key>
+		<array>
+			<string>coded</string>
+			<string>BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU051bWJlcgCEhAdOU1ZhbHVlAISECE5TT2JqZWN0AIWEASqEhAFxlwGG</string>
+		</array>
 		<key>NSPaperSize</key>
 		<array>
 			<string>size</string>
-			<string>{595, 842}</string>
+			<string>{842, 595}</string>
 		</array>
 		<key>NSPrintReverseOrientation</key>
 		<array>
@@ -1036,7 +1017,7 @@
 			</dict>
 		</array>
 		<key>Frame</key>
-		<string>{{327, 49}, {1020, 958}}</string>
+		<string>{{48, 28}, {1347, 979}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>
@@ -1050,15 +1031,15 @@
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{-163, -16}, {885, 816}}</string>
+		<string>{{37.106917460014472, 9.4339620661053747}, {762.2641349413143, 526.41508328867997}}</string>
 		<key>Zoom</key>
-		<real>1</real>
+		<real>1.5900000333786011</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>
 				<string>Canvas 1</string>
-				<real>1</real>
-				<real>1</real>
+				<real>1.5900000333786011</real>
+				<real>0.79500001668930054</real>
 			</array>
 		</array>
 	</dict>
