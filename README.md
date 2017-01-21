@@ -16,7 +16,7 @@ Same like [/postgresql-empty-sq](postgresql-empty-sq), but also contains ‘dnsm
 
 
 ### Docker Images dependency diagram
-![Docker Images dependency diagram](https://github.com/compartia/docker-sonar-kt-advance/blob/master/docs/deps.png?raw=true)
+![Docker Images dependency diagram](https://raw.githubusercontent.com/kestreltechnology/docker-sonar-kt-advance/master/docs/deps.png)
 
 
 ## SonarQube with H2 database
