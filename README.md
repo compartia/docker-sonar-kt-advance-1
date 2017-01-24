@@ -12,7 +12,7 @@ SonarQube configured to run with Postgres database;  KT-Advance plugin pre-insta
 A Posgress database with empty SQ tables. Bears only pre-created user accounts and default setting for things like Quality Profiles etc... To be used in composition with [/demo-sonarqube-postgresql-ktadvance](demo-sonarqube-postgresql-ktadvance)
 
 ### [/postgresql-populated-sq](postgresql-populated-sq)
-Same like [/postgresql-empty-sq](postgresql-empty-sq), but also contains ‘dnsmasq’ sample analysis results. To be used in composition with [/demo-sonarqube-postgresql-ktadvance](demo-sonarqube-postgresql-ktadvance)
+Similar to [/postgresql-empty-sq](postgresql-empty-sq), but also contains ‘dnsmasq’ sample analysis results. To be used in composition with [/demo-sonarqube-postgresql-ktadvance](demo-sonarqube-postgresql-ktadvance)
 
 
 ### Docker Images dependency diagram
@@ -22,7 +22,7 @@ Same like [/postgresql-empty-sq](postgresql-empty-sq), but also contains ‘dnsm
 ## SonarQube with H2 database
 To run bare SonarQube with only KT-Advance plugin pre-installed, you need either to build the Docker image
 ```
-$ docker build -t kestreltechnology/ktadvance-h2-empty-sq .
+$ docker build -t kestreltechnology/ktadvance-h2-empty-sq ./ktadvance-h2-empty-sq
 ```
 OR
 to pull the image from Docker Hub
@@ -54,12 +54,14 @@ sonarqube_1  | INFO  app[o.s.p.m.Monitor] Process[ce] is up
 ```
 you may navigate to [http://localhost:9000](http://localhost:9000)
 
-#### Docker images
-the Docker composite is built of 2 containers. One for SonarQube, other for Posgres DB. The corresponding images are:
+#### Docker images dependencies
+The Docker composite is built of 2 containers. One for SonarQube, other for Posgres DB. The corresponding images are (please refer Docker Images Dependency Diagram above):
 - https://hub.docker.com/r/kestreltechnology/demo-sonarqube-postgresql-ktadvance/
 - https://hub.docker.com/r/kestreltechnology/postgresql-populated-sq/
 
 
 ## Running the SonarQube scanner
+Before the first scanner run, put `sonar-project.properties` file into the root dir of you C project. A sample .properties file could be found here: [here](https://github.com/kestreltechnology/sonar-kt-advance/blob/master/src/test/resources/test_project/redis/sonar-project.properties)
+
 To run the scanner on your KT-analyzed C project run `sonar-scanner` in the project dir. (In case you don’t have `sonar-scanner CLI`, please get it from (http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner) ).
 To log more debug info into console, you may run the scanner in verbose mode: `sonar-scanner -X`.
