@@ -6,3 +6,5 @@ run.sh
 postgresql-populated-sq/docker-entrypoint-initdb.d/sq-dnsmasq.dump
 
 docs/deps.graffle
+
+test/**
