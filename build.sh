@@ -19,26 +19,26 @@ if [ "$1" ]; then
     if [ "$1" == "none" ]; then
         VER=""
     fi
-
+    
 fi
 
 echo building version $VER
 
 NS=kestreltechnology
 
-docker build -t $NS/postgresql-empty-sq:$VER ./postgresql-empty-sq
+#docker build -t $NS/postgresql-empty-sq$VER ./postgresql-empty-sq
 
 docker build -t $NS/ktadvance-h2-empty-sq$VER ./ktadvance-h2-empty-sq
 
-docker build -t $NS/demo-sonarqube-postgresql-ktadvance:$VER ./demo-sonarqube-postgresql-ktadvance
+#docker build -t $NS/demo-sonarqube-postgresql-ktadvance$VER ./demo-sonarqube-postgresql-ktadvance
 
-docker build -t $NS/postgresql-populated-sq:$VER ./postgresql-populated-sq
+#docker build -t $NS/postgresql-populated-sq$VER ./postgresql-populated-sq
 
 
 if [ "$2" == "push" ]; then
     echo pushing version $VER
-    docker push $NS/postgresql-empty-sq:$VER
-    docker push $NS/ktadvance-h2-empty-sq:$VER
-    docker push $NS/demo-sonarqube-postgresql-ktadvance:$VER
-    docker push $NS/postgresql-populated-sq:$VER
+    #docker push $NS/postgresql-empty-sq$VER
+    docker push $NS/ktadvance-h2-empty-sq$VER
+    #docker push $NS/demo-sonarqube-postgresql-ktadvance$VER
+    #docker push $NS/postgresql-populated-sq$VER
 fi
