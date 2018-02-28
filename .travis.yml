@@ -1,5 +1,4 @@
 sudo: true
 dist: trusty
 
-script: 
-  - ./build.sh latest
+script: build.sh latest
