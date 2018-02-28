@@ -65,3 +65,15 @@ Before the first scanner run, put `sonar-project.properties` file into the root 
 
 To run the scanner on your KT-analyzed C project run `sonar-scanner` in the project dir. (In case you don’t have `sonar-scanner CLI`, please get it from (http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner) ).
 To log more debug info into console, you may run the scanner in verbose mode: `sonar-scanner -X`.
+
+## Contributing
+### Building docker images
+Call `build.sh latest` to get latest sonar-kt-advance release version number from GitHub
+Call `build.sh none` to build Docker images with no tag
+Call `build.sh <Docker tag version> push` to build Docker images and to push them into Docker hub
+
+example:  
+```build.sh 5.3.0 push```
+
+example:  
+```build.sh latest push```
