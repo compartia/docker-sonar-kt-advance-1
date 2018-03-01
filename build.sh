@@ -1,5 +1,3 @@
-
-
 if [ -z "$1" ]; then
     echo "\n\n"
     echo "Please call '$0 <Docker tag version>' to run this command."
@@ -11,12 +9,12 @@ fi
 
 if [ "$1" ]; then
     VER=:$1
-    if [ "$1" == "latest" ]; then
+    if [ "$1" = "latest" ]; then
         echo "fetching latest release version number from GitHub ..."
         VER=:$(curl -s https://api.github.com/repos/kestreltechnology/sonar-kt-advance/releases/latest | grep tag_name | cut -d '"' -f 4)        
     fi
 
-    if [ "$1" == "none" ]; then
+    if [ "$1" = "none" ]; then
         VER=""
     fi
     
@@ -26,7 +24,7 @@ echo building version $VER
 
 NS=kestreltechnology
 
-#docker build -t $NS/postgresql-empty-sq$VER ./postgresql-empty-sq
+docker build -t $NS/postgresql-empty-sq$VER ./postgresql-empty-sq
 
 docker build -t $NS/ktadvance-h2-empty-sq$VER ./ktadvance-h2-empty-sq
 
@@ -35,7 +33,7 @@ docker build -t $NS/ktadvance-h2-empty-sq$VER ./ktadvance-h2-empty-sq
 #docker build -t $NS/postgresql-populated-sq$VER ./postgresql-populated-sq
 
 
-if [ "$2" == "push" ]; then
+if [ "$2" = "push" ]; then
     echo pushing version $VER
     #docker push $NS/postgresql-empty-sq$VER
     docker push $NS/ktadvance-h2-empty-sq$VER
