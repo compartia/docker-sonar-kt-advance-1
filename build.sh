@@ -27,7 +27,7 @@ echo building version $VER
 
 NS=kestreltechnology
 
-#docker build -t $NS/postgresql-empty-sq$VER ./postgresql-empty-sq
+docker build -t $NS/postgresql-empty-sq$VER ./postgresql-empty-sq
 
 docker build -t $NS/ktadvance-h2-empty-sq$VER ./ktadvance-h2-empty-sq
 
