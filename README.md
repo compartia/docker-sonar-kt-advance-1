@@ -1,4 +1,5 @@
 # KT Advance SonarQube Plugin Docker
+[![Build Status](https://travis-ci.org/compartia/docker-sonar-kt-advance-1.svg?branch=2018-dev)](https://travis-ci.org/compartia/docker-sonar-kt-advance-1)
 
 ## Contents
 ### [/ktadvance-h2-empty-sq](ktadvance-h2-empty-sq)
