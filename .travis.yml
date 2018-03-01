@@ -2,6 +2,6 @@ sudo: true
 dist: trusty
 git:
   submodules: false
-install: true
+
 
 script: sh ./build.sh latest
