@@ -1,0 +1,6 @@
+sudo: true
+dist: trusty
+git:
+  submodules: false
+
+script: sh ./build.sh latest
