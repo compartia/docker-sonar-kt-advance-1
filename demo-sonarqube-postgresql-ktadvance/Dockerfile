@@ -1,4 +1,4 @@
-FROM kestreltechnology/ktadvance-h2-empty-sq:5.6.0
+FROM kestreltechnology/ktadvance-h2-empty-sq
 MAINTAINER Artem Zaborskiy “artem@toptal.com"
 
 #install PG command line tools

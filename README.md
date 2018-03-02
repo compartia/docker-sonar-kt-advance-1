@@ -37,7 +37,7 @@ $ docker run -d --name my-sq-kt -p 9000:9000 -p 9092:9092 kestreltechnology/ktad
 #### Docker image
 https://hub.docker.com/r/kestreltechnology/ktadvance-h2-empty-sq/
 #### KT-Advance plugin for SonarQube
-https://github.com/kestreltechnology/sonar-kt-advance/releases/download/5.6.0-b/sonar-kt-advance-plugin-5.6.0.jar
+https://github.com/kestreltechnology/sonar-kt-advance/releases/download/latest
 
 ## SonarQube with Postgres database
 To run SonarQube with Postgres pre-filled with Dnsmasq project analysis,
