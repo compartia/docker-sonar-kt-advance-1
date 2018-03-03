@@ -1,4 +1,6 @@
 FROM sonarqube:5.6.4-alpine
+ARG CACHE_TAG
+ENV FROM_VERSION=${CACHE_TAG}
 
 MAINTAINER Artem Zaborskiy “artem@toptal.com"
 
@@ -7,7 +9,7 @@ RUN apk --no-cache add --repository http://dl-cdn.alpinelinux.org/alpine/edge/co
 ENV PLUGINS_DIR /opt/sonarqube/extensions/plugins
 
 WORKDIR $PLUGINS_DIR
-RUN curl -s https://api.github.com/repos/kestreltechnology/sonar-kt-advance/releases/latest|grep browser_download_url | cut -d '"' -f 4 | wget -qi -
+RUN wget https://github.com/kestreltechnology/sonar-kt-advance/releases/download/$FROM_VERSION/sonar-kt-advance-plugin-$FROM_VERSION.jar
 
 RUN ls -la $PLUGINS_DIR
 WORKDIR $SONARQUBE_HOME
