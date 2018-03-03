@@ -68,12 +68,12 @@ To log more debug info into console, you may run the scanner in verbose mode: `s
 
 ## Contributing
 ### Building docker images
-Call `build.sh latest` to get latest sonar-kt-advance release version number from GitHub
-Call `build.sh none` to build Docker images with no tag
-Call `build.sh <Docker tag version> push` to build Docker images and to push them into Docker hub
+Call `build.sh latest <namespace>` to get latest sonar-kt-advance release version number from GitHub
+Call `build.sh none <namespace>` to build Docker images with no tag
+Call `build.sh <Docker tag version> <namespace> push` to build Docker images and to push them into Docker hub
 
 example:  
-```build.sh 5.3.0 push```
+```build.sh 5.3.0 kt push```
 
 example:  
-```build.sh latest push```
+```build.sh latest kt push```
