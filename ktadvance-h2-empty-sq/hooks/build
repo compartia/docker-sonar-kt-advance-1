@@ -1,3 +1,4 @@
+#!/bin/bash
 TAG=$CACHE_TAG
 if [ -z $CACHE_TAG ]; then
   TAG=$SOURCE_BRANCH
