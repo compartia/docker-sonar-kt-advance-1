@@ -1,0 +1,11 @@
+TAG=$CACHE_TAG
+if [ -z $CACHE_TAG ]; then
+  TAG=$SOURCE_BRANCH
+fi
+
+echo "SOURCE_BRANCH=$SOURCE_BRANCH"
+echo "DOCKER_REPO=$DOCKER_REPO"
+echo "CACHE_TAG=$CACHE_TAG"
+echo "TAG=$TAG"
+echo "------------------------"
+docker build --build-arg CACHE_TAG=$TAG -f $DOCKERFILE_PATH -t $IMAGE_NAME .
