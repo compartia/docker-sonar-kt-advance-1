@@ -1,9 +1,8 @@
 ARG SOURCE_BRANCH
-FROM kestreltechnology/ktadvance-h2-empty-sq
-MAINTAINER Artem Zaborskiy “artem@toptal.com"
-
+FROM kestreltechnology/ktadvance-h2-empty-sq:${SOURCE_BRANCH}
 ENV FROM_VERSION=${SOURCE_BRANCH}
-RUN echo "FROM_VERSION=$FROM_VERSION"
+
+RUN echo "env FROM_VERSION=$FROM_VERSION"
 
 #install PG command line tools
 RUN apk --update add postgresql-client
