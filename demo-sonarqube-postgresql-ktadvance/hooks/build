@@ -2,5 +2,6 @@
 echo "SOURCE_BRANCH=$SOURCE_BRANCH"
 echo "DOCKER_REPO=$DOCKER_REPO"
 echo "CACHE_TAG=$CACHE_TAG"
+echo "NS=$NS"
 echo "------------------------"
 docker build --build-arg CACHE_TAG=$CACHE_TAG --build-arg NS=$NS -f $DOCKERFILE_PATH -t $IMAGE_NAME .
