@@ -1,8 +1,8 @@
-ARG SOURCE_BRANCH
-FROM kestreltechnology/ktadvance-h2-empty-sq:${SOURCE_BRANCH}
-ENV FROM_VERSION=${SOURCE_BRANCH}
+ARG CACHE_TAG=5.6.5
+FROM kestreltechnology/ktadvance-h2-empty-sq:${CACHE_TAG}
+ENV FROM_VERSION=${CACHE_TAG}
 
-RUN echo "env FROM_VERSION=$FROM_VERSION"
+RUN echo "env FROM_VERSION=$CACHE_TAG"
 
 #install PG command line tools
 RUN apk --update add postgresql-client
