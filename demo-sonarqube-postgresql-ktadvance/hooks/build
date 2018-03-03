@@ -1,2 +1,6 @@
 #!/bin/bash
+echo "SOURCE_BRANCH=$SOURCE_BRANCH"
+echo "DOCKER_REPO=$DOCKER_REPO"
+echo "CACHE_TAG=$CACHE_TAG"
+echo "------------------------"
 docker build --build-arg SOURCE_BRANCH=$SOURCE_BRANCH -f $DOCKERFILE_PATH -t $IMAGE_NAME .
