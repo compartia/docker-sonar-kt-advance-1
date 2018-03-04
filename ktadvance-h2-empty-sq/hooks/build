@@ -4,9 +4,16 @@ if [ -z $CACHE_TAG ]; then
   TAG=$SOURCE_BRANCH
 fi
 
+if [ TAG = "latest" ]; then
+    echo "fetching latest plugin release version number from GitHub ..."
+    TAG=$(curl -s https://api.github.com/repos/kestreltechnology/sonar-kt-advance/releases/latest | grep tag_name | cut -d '"' -f 4)        
+fi
+
 echo "SOURCE_BRANCH=$SOURCE_BRANCH"
 echo "DOCKER_REPO=$DOCKER_REPO"
 echo "CACHE_TAG=$CACHE_TAG"
 echo "TAG=$TAG"
+
 echo "------------------------"
+
 docker build --build-arg CACHE_TAG=$TAG -f $DOCKERFILE_PATH -t $IMAGE_NAME .
