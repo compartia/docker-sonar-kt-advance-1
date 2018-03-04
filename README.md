@@ -40,12 +40,13 @@ https://hub.docker.com/r/kestreltechnology/ktadvance-h2-empty-sq/
 https://github.com/kestreltechnology/sonar-kt-advance/releases/download/latest
 
 ## SonarQube with Postgres database
-To run SonarQube with Postgres pre-filled with Dnsmasq project analysis,
-just run docker composite from the subdir [./composite-postgresql-populated-sq](composite-postgresql-populated-sq):
+To run SonarQube with Postgres pre-filled with demo projects analysis,
+just call
 ```
-$ cd composite-postgresql-populated-sq
-$ docker-compose up
+$ sh run-demo.sh
 ```
+
+Please edit `export TAG=latest` line in `run-demo.sh` to set the desired version number.
 
 After seeing in the console something like
 ```
@@ -68,12 +69,12 @@ To log more debug info into console, you may run the scanner in verbose mode: `s
 
 ## Contributing
 ### Building docker images
-Call `build.sh latest` to get latest sonar-kt-advance release version number from GitHub
-Call `build.sh none` to build Docker images with no tag
-Call `build.sh <Docker tag version> push` to build Docker images and to push them into Docker hub
+Call `build.sh latest <namespace>` to get latest sonar-kt-advance release version number from GitHub
+Call `build.sh none <namespace>` to build Docker images with no tag
+Call `build.sh <Docker tag version> <namespace> push` to build Docker images and to push them into Docker hub
 
 example:  
-```build.sh 5.3.0 push```
+```build.sh 5.3.0 kt push```
 
 example:  
-```build.sh latest push```
+```build.sh latest kt push```

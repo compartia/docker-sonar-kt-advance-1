@@ -1,5 +1,7 @@
-FROM kestreltechnology/ktadvance-h2-empty-sq
-MAINTAINER Artem Zaborskiy “artem@toptal.com"
+ARG CACHE_TAG=latest
+ARG NS
+
+FROM ${NS}/ktadvance-h2-empty-sq:${CACHE_TAG}
 
 #install PG command line tools
 RUN apk --update add postgresql-client

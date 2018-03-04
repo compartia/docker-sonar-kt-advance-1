@@ -3,7 +3,7 @@ version: "2"
 services:
 
   sonarqube:
-    image: kestreltechnology/demo-sonarqube-postgresql-ktadvance:latest
+    image: ${NS}/demo-sonarqube-postgresql-ktadvance:${TAG}
     ports:
       - "9000:9000"
     networks:
@@ -19,7 +19,7 @@ services:
 
 
   db:
-    image: kestreltechnology/postgresql-empty-sq:latest
+    image: ${NS}/postgresql-empty-sq:${TAG}
     networks:
       - sonarnet
     ports:
