@@ -40,12 +40,13 @@ https://hub.docker.com/r/kestreltechnology/ktadvance-h2-empty-sq/
 https://github.com/kestreltechnology/sonar-kt-advance/releases/download/latest
 
 ## SonarQube with Postgres database
-To run SonarQube with Postgres pre-filled with Dnsmasq project analysis,
-just run docker composite from the subdir [./composite-postgresql-populated-sq](composite-postgresql-populated-sq):
+To run SonarQube with Postgres pre-filled with demo projects analysis,
+just call
 ```
-$ cd composite-postgresql-populated-sq
-$ docker-compose up
+$ sh run-demo.sh
 ```
+
+Please edit `export TAG=latest` line in `run-demo.sh` to set the desired version number.
 
 After seeing in the console something like
 ```
