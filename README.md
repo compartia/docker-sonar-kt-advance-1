@@ -40,18 +40,24 @@ https://hub.docker.com/r/kestreltechnology/ktadvance-h2-empty-sq/
 https://github.com/kestreltechnology/sonar-kt-advance/releases/download/latest
 
 ## SonarQube with Postgres database
-To run SonarQube with Postgres pre-filled with demo projects analysis,
-1. please edit `export TAG=latest` line in `run-demo.sh` file to set the desired version number.  
-2. And then just call
+To run SonarQube with Postgres pre-filled with demo projects analysis, you basically need to 
+1. download only 1 file:
+  - [/composite-postgresql-populated-sq/docker-compose.yml](./composite-postgresql-populated-sq/docker-compose.yml)
+2. in termial window, run 
 ```
-$ sh run-demo.sh
+export NS=kestreltechnology
+#use recent version number (or 'latest')
+export TAG=5.6.5
+docker-compose up
 ```
-3. After seeing in the console something like
+- optionally you may refer [/run-demo.sh](./run-demo.sh) file
+
+3. Wait for messages like 
 ```
 sonarqube_1  | INFO  ce[o.s.ce.app.CeServer] Compute Engine is up
 sonarqube_1  | INFO  app[o.s.p.m.Monitor] Process[ce] is up
 ```
-you may navigate to [http://localhost:9000](http://localhost:9000)  
+4. navigate to [http://localhost:9000](http://localhost:9000)  
 
 
 #### Docker images dependencies
