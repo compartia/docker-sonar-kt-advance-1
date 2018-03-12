@@ -12,4 +12,4 @@ echo "TAG=$TAG"
 
 echo "------------------------"
 
-docker build --build-arg CACHE_TAG=$TAG -f $DOCKERFILE_PATH -t $IMAGE_NAME .
+docker build --no-cache --build-arg CACHE_TAG=$TAG -f $DOCKERFILE_PATH -t $IMAGE_NAME .

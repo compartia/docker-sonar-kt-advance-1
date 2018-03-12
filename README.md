@@ -47,10 +47,11 @@ To run SonarQube with Postgres pre-filled with demo projects analysis, you basic
 ```
 export NS=kestreltechnology
 #use recent version number (or 'latest')
-export TAG=5.6.5
+export TAG=5.6.7
 docker-compose up
 ```
 - optionally you may refer [/run-demo.sh](./run-demo.sh) file
+- the recent version number corresponds to the plug-in version (https://github.com/kestreltechnology/sonar-kt-advance/releases)
 
 3. Wait for messages like 
 ```

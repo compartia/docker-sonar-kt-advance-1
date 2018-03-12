@@ -8,4 +8,4 @@ echo "CACHE_TAG=$CACHE_TAG"
 echo "NS=$NS"
 echo "TAG=$TAG"
 echo "------------------------"
-docker build --build-arg CACHE_TAG=$TAG --build-arg NS=$NS -f $DOCKERFILE_PATH -t $IMAGE_NAME .
+docker build --no-cache --build-arg CACHE_TAG=$TAG --build-arg NS=$NS -f $DOCKERFILE_PATH -t $IMAGE_NAME .
