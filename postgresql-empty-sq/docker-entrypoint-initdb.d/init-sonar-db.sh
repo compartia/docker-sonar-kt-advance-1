@@ -1,3 +1,4 @@
 echo "*** restoring sonar db ***"
 set -e
-pg_restore -d sonar -U sonar docker-entrypoint-initdb.d/sq.dump
+pg_restore --single-transaction -d "sonar" -U "sonar" --role "sonar" --verbose "docker-entrypoint-initdb.d/sonar-db-empty.backup"
+
